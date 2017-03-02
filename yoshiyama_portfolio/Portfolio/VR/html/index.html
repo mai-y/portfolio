@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>VR</title>
+	<script src="../assets/js/aframe-v0.3.0.min.js"></script>
+</head>
+<body>
+<!-- シーン -->
+<a-scene>
+	<!-- アセット -->
+	<a-assets>
+		<img id="texture" src="../assets/images/texture.jpg">
+		
+        <!-- 全天球背景に使用する画像の指定 -->
+        <img id="sky" src="../assets/images/mountain.jpg">
+
+	</a-assets>
+
+	<!-- ボックス -->
+	<a-box src="../assets/images/app.jpeg" position="0 0.5 -1.5" rotation="0 45 0" width="1" height="1" depth="1"></a-box>
+
+	<!-- 背景色は不要なのでコメントアウトして非表示にする -->
+	<!-- <a-sky color="#fafafa"></a-sky> -->
+	
+    <!-- 全天球背景の設定 -->
+	<a-sky src="#sky" ></a-sky>
+    
+</a-scene>
+</body>
+</html>

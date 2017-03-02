@@ -1,0 +1,188 @@
+/* body */
+body {
+	width: 800px;
+	margin: 0 auto;
+    background-image: url(../images/pink.jpg);
+}
+
+/* header */
+#header {
+    width:800px;
+    min-height:47px;
+    height:auto !important;
+    height:47px;
+}
+
+#header h1 {
+    margin:0;
+    padding:10px 10px 15px;font-size:120%;
+    float:left;
+    line-height:1em;
+    color:  #ffffff;
+}
+
+#header h1 a {
+    text-decoration: none;
+    color:  #ffffff;
+}
+
+#header h1 a:hover {
+    color: #ff0000;
+}
+
+#header h1 a:active {
+    color: #ff0000;
+}
+
+#header .nav1 {
+    width: 100%; /* ナビゲーションの幅 */
+    background: #ea26a0 url(../images/hor_menu4_back6.gif) repeat-x top; /* ナビゲーションの背景 */
+    font-size: 80%;
+}
+
+#header .nav1 ul.nl {
+    background: #ea26a0 url(../images/hor_menu4_back6.gif) repeat-x top; /* メニューの背景 */
+    border-left: 1px #b51177 solid; /* メニューの左境界線 */
+    border-right: 1px #f385ca solid; /* メニューの右境界線 */
+    list-style-type: none;
+    text-align: center;
+}
+
+#header .nav1 ul.nl li {
+    width: 20%; /* 項目の幅 */
+    float: right;
+}
+
+#header .nav1 ul.nl li a {
+    display: block;
+    padding: 9px 2px; /* リンクエリアのパディング（上下、左右） */
+    border-left: 1px #f385ca solid; /* リンクエリアの左境界線 */
+    border-right: 1px #b51177 solid; /* リンクエリアの右境界線 */
+    text-decoration: none; /* テキストの下線（なし） */
+    font-weight: bold; /* 太字 */
+}
+
+#header .nav1 ul.nl li a:link {
+    color: #ffffff;
+}
+
+#header .nav1 ul.nl li a:visited {
+    color: #ffffff;
+}
+
+#header .nav1 ul.nl li a:hover {
+    color: #ff0000;
+}
+
+#header .nav1 ul.nl li a:active {
+    color: #ff0000;
+}
+
+#header .clearFix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+#header .clearFix {
+    min-height: 1px;
+}
+
+/* box */
+
+div.section {
+    width: 800px; /* ボックスの幅 */
+    height: 570px; 
+    padding-bottom: 5px; /* ボックスの下パディング */
+    background: #ffffff;
+    font-size: 80%;
+    color: #000000;
+}
+
+div.section h2 {
+    margin: 0; /* 見出しのマージン */
+    padding: 10px 10px; /* 見出しのパディング（上、左右、下） */
+    background: #ffffff; 
+    font-size: 20px; /* 見出しの文字サイズ */
+    text-align: center;
+}
+
+
+
+/* --- ボックス内の段落 --- */
+
+.section .table {
+    display:table;
+    table-layout:fixed;
+    width: 690px;
+    border-collapse:separate;
+    border-spacing:10px 20px;
+    text-align: center;
+    margin-left: 25px;
+    padding-left: 70px;
+}
+
+.section .table li {
+    display: table-cell;
+    height: 80px;
+    vertical-align: middle;
+    background: #fff;
+    border-width:1px;
+    border-style:dotted;
+}
+
+/* サブミットボタン */
+
+div {
+    text-align : center;
+}
+
+/* footer */
+footer {
+ width:800px;
+ margin:0 auto;
+ clear:both;
+}
+
+footer p {
+ margin:0;
+ padding:5px;
+ font-size:65%;
+ text-align:center;
+ line-height:1.32em;
+ font-family:verdana;
+}
+
+.carousel-control-prev-icon {
+    background-image: url('left.png');
+}
+
+
+.carousel-control-next-icon {
+    background-image: url('right.png');
+}
+
+iframe {
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+}
+
+.pic {
+    margin-left: 13%;
+}
+
+div.section {
+    width: 100%;
+	height: 590px;
+	/*background-color: #FFFFFF;*/
+	margin-bottom: 12px;
+    display: block;
+    margin: 0 auto;
+}
+
+#btn {
+    color: white;
+}

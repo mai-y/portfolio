@@ -1,0 +1,28 @@
+﻿html, body{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.entry{
+    padding:5px;
+    background:lightblue;
+    margin:5px;
+    padding:10px;
+    border-radius:5px;
+}
+
+.content{padding:15px;
+    background:white;
+    line-height: 1.5em;
+    font-size: smaller;
+    border-radius:5px;
+}
+
+.hidden{
+    display:none
+}
+
+.shown{
+    display:block
+}

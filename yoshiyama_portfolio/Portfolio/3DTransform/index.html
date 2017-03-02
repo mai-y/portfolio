@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<style>
+body{
+	background-attachment: fixed;
+	background-image: url(Brand/top.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	}
+
+#world {
+	width:320px;
+	height:200px;
+	position:relative;
+	margin:auto;
+	padding:150px;
+	-webkit-perspective:1000;
+}
+
+#album {
+	width:320px;
+	height:200px;
+	position:absolute;
+	-webkit-transform-style:preserve-3d;
+	-webkit-transition-property:-webkit-transform;
+	-webkit-transition-duration:2s;
+}
+.picselect1 {-webkit-transform:rotateY(0deg);}
+.picselect2 {-webkit-transform:rotateY(-72deg);}
+.picselect3 {-webkit-transform:rotateY(-144deg);}
+.picselect4 {-webkit-transform:rotateY(-216deg);}
+.picselect5 {-webkit-transform:rotateY(-288deg);}
+
+img {
+	width: 320px;
+	height: 200px;
+	position: absolute;
+}
+
+#picture1 {-webkit-transform:rotateY(0deg)translateZ(280px);}
+#picture2 {-webkit-transform:rotateY(72deg)translateZ(280px);}
+#picture3 {-webkit-transform:rotateY(144deg)translateZ(280px);}
+#picture4 {-webkit-transform:rotateY(216deg)translateZ(280px);}
+#picture5 {-webkit-transform:rotateY(288deg)translateZ(280px);}
+
+</style>
+<title>ファッションブランド</title>
+</head>
+<body>
+	<div id="world">
+		<div id="album" class="picselect1">
+			<img src="Brand/CECILMcBEE.jpg" id="picture1">
+			<img src="Brand/AZUL.gif" id="picture2">
+			<img src="Brand/RODEOCROWNS.jpg" id="picture3">
+			<img src="Brand/INGNI.jpg" id="picture4">
+			<img src="Brand/SkinnyLip.gif" id="picture5">
+		</div>
+	</div>
+	<div style="text-align:center;">
+	<button id="button1" style="padding:5px;font-size:14px;">NO.1</button>
+	<button id="button2" style="padding:5px;font-size:14px;">NO.2</button>
+	<button id="button3" style="padding:5px;font-size:14px;">NO.3</button>
+	<button id="button4" style="padding:5px;font-size:14px;">NO.4</button>
+	<button id="button5" style="padding:5px;font-size:14px;">NO.5</button>
+	</div>
+	<script type="text/javascript">
+	button1.onclick=function(){
+		album.className="picselect1";
+	}
+	button2.onclick=function(){
+		album.className="picselect2";
+	}
+	button3.onclick=function(){
+		album.className="picselect3";
+	}
+	button4.onclick=function(){
+		album.className="picselect4";
+	}
+	button5.onclick=function(){
+		album.className="picselect5";
+	}
+	</script>
+</body>
+</html>

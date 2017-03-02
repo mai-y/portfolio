@@ -1,0 +1,100 @@
+body {
+    background-image: url(../images/pink.jpg);
+}
+#header {
+	width:700px;
+	overflow: hidden;
+	margin:0 auto;
+	position: relative;
+	margin-bottom: 10px;
+    text-align: center;
+}
+/* リボン */
+#header .ribbon {
+ font-size: 16px !important;
+ width: 50%;
+ position: relative;
+ background: #FFC0CB;
+ color: #fff;
+ text-align: center;
+ padding: 0 110px;
+ margin: 2em auto 4em;
+}
+#header .ribbon:before, .ribbon:after {
+ content: "";
+ position: absolute;
+ display: block;
+ bottom: -2em;
+ border: 1.5em solid #FFC0CB;
+ z-index: -1;
+}
+#header .ribbon:before {
+ left: -1em;
+ border-right-width: 1.5em;
+ border-left-color: transparent;
+}
+#header .ribbon:after {
+ right: -1em;
+ border-left-width: 1.5em;
+ border-right-color: transparent;
+}
+#header .ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+ content: "";
+ position: absolute;
+ display: block;
+ border-style: solid;
+ border-color: #FFB6C1 transparent transparent transparent;
+ bottom: -1em;
+}
+#header .ribbon .ribbon-content:before {
+ left: 0;
+ border-width: 1em 0 0 1em;
+}
+#header .ribbon .ribbon-content:after {
+ right: 0;
+ border-width: 1em 1em 0 0;
+}
+#mainBox {
+	width: 640px;
+	margin: 0 auto;
+}
+#parent {
+	width: 660px;
+	margin-right: -20px;
+}
+#parent .child {
+	width: 200px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	float: left;
+	display: inline;    /*for ie*/
+	font-size: 12px;
+}
+#parent .child .img {
+	width: 200px;
+	height: 120px;
+	background-color: #FFFFFF;
+	margin-bottom: 12px;
+    display: block;
+}
+#parent .child .title {
+	font-weight: bold;
+	margin-bottom: 12px;
+}
+
+/* footer */
+
+footer {
+ width:800px;
+ margin:0 auto;
+ clear:both;
+}
+
+footer p {
+ margin:0;
+ padding:5px;
+ font-size:65%;
+ text-align:center;
+ line-height:1.32em;
+ font-family:verdana;
+}
